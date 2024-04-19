@@ -10,12 +10,19 @@ $text-color: white;
         color: $text-color;
         padding: 25px;
 
-        .row #text{
-            font-size: 22px;
-            font-weight: 500;
+        .bi-quote {
+            font-size: 40px;
+            overflow: hidden;
+        }
 
-            .bi-quote {
-                font-size: 40px;
+        .text {
+            .row #text {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            .row #author{
+                text-align: right;
             }
         }
 

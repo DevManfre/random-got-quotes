@@ -7,7 +7,7 @@ function Quotes() {
     function newQuote() {
         fetch('https://api.gameofthronesquotes.xyz/v1/random')
             .then(response => response.json())
-            .then(data => setQuote(data.sentence))
+            .then(data => setQuote(data))
             .catch(error => console.error(error));
     }
 
@@ -18,13 +18,16 @@ function Quotes() {
     return (
         <div id="quote-container">
             <div id="quote-box">
-                <div className="row">
-                    <span id="text">
-                        <i class="bi bi-quote"></i>{quote}
-                    </span>
-                </div>
-                <div className="row">
-                    <p id="author">Alessio Manfredini</p>
+                <div className="text">
+                    <div className="row">
+                        <span id="text">
+                            <i class="bi bi-quote"></i>
+                            {quote.sentence}
+                        </span>
+                    </div>
+                    <div className="row">
+                        <p id="author">- {quote.character.name}</p>
+                    </div>
                 </div>
                 <div className="row button-container">
                     <button className="btn">
@@ -35,7 +38,7 @@ function Quotes() {
                     </button>
                 </div>
             </div>
-            <p>by DevManfre</p>
+            <a href="#">by DevManfre</a>
         </div>
     );
 }
