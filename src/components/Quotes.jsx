@@ -30,15 +30,18 @@ function Quotes() {
                     </div>
                 </div>
                 <div className="row button-container">
-                    <button className="btn">
+                    <a className="btn" title="Copy the quote!" onClick={() => { navigator.clipboard.writeText(quote.sentence) }}>
                         <i class="bi bi-copy"></i>
-                    </button>
-                    <button className="btn" id='new-quote'>
+                    </a>
+                    <a className="btn" id='tweet-quote' title="Tweet the quote!">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a className="btn" id='new-quote' onClick={newQuote} title="Get a new quote!">
                         <i class="bi bi-arrow-counterclockwise"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
-            <a href="#">by DevManfre</a>
+            <a href="https://github.com/DevManfre">by DevManfre</a>
         </div>
     );
 }

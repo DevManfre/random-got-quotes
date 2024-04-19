@@ -32,9 +32,13 @@ $text-color: white;
             justify-content: center;
             gap: 5px;
 
-            button {
+            a {
                 width: 50px;
                 background-color: $text-color;
+            }
+
+            #new-quote {
+                
             }
         }
     }
