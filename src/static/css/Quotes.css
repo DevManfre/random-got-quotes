@@ -6,6 +6,14 @@
   width: 600px;
   border-radius: 8px;
   color: white;
+  padding: 25px;
+}
+#quote-container #quote-box .row #text {
+  font-size: 22px;
+  font-weight: 500;
+}
+#quote-container #quote-box .row #text .bi-quote {
+  font-size: 40px;
 }
 #quote-container #quote-box .button-container {
   display: flex;

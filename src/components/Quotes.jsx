@@ -4,7 +4,7 @@ import '../static/css/Quotes.css'
 function Quotes() {
     const [quote, setQuote] = useState("");
 
-    function newQuote(){
+    function newQuote() {
         fetch('https://api.gameofthronesquotes.xyz/v1/random')
             .then(response => response.json())
             .then(data => setQuote(data.sentence))
@@ -19,9 +19,9 @@ function Quotes() {
         <div id="quote-container">
             <div id="quote-box">
                 <div className="row">
-                    <p id="text">
-                        {quote}
-                    </p>
+                    <span id="text">
+                        <i class="bi bi-quote"></i>{quote}
+                    </span>
                 </div>
                 <div className="row">
                     <p id="author">Alessio Manfredini</p>

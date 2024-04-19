@@ -1,3 +1,5 @@
+$text-color: white;
+
 #quote-container {
     text-align: center;
 
@@ -5,7 +7,17 @@
         background-color: #3E3232;
         width: 600px;
         border-radius: 8px;
-        color: white;
+        color: $text-color;
+        padding: 25px;
+
+        .row #text{
+            font-size: 22px;
+            font-weight: 500;
+
+            .bi-quote {
+                font-size: 40px;
+            }
+        }
 
         .button-container {
             display: flex;
@@ -15,7 +27,7 @@
 
             button {
                 width: 50px;
-                background-color: white;
+                background-color: $text-color;
             }
         }
     }
