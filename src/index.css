@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#quote-container {
+  text-align: center;
+}
+
+#quote-container #quote-box {
+  background-color: #3E3232;
+  width: 600px;
+  border-radius: 8px;
+  color: white;
+}
+
+#quote-container #quote-box .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#quote-container #quote-box .button-container button {
+  width: 50px;
+  background-color: white;
 }
