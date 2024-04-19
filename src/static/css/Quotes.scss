@@ -1,10 +1,11 @@
 $text-color: white;
+$box-background: #3E3232;
 
 #quote-container {
     text-align: center;
 
     #quote-box {
-        background-color: #3E3232;
+        background-color: $box-background;
         width: 600px;
         border-radius: 8px;
         color: $text-color;
@@ -41,10 +42,21 @@ $text-color: white;
                 width: 50px;
                 background-color: $text-color;
             }
-
-            a:active{
+            
+            a:hover {
                 background-color: #41B06E;
             }
         }
+    }
+
+    a {
+        text-decoration: none;
+        color: $box-background;
+        transition: 1s;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        transition: 1s;
     }
 }

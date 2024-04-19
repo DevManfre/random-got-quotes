@@ -33,6 +33,15 @@
   width: 50px;
   background-color: white;
 }
-#quote-container #quote-box .button-container a:active {
+#quote-container #quote-box .button-container a:hover {
   background-color: #41B06E;
+}
+#quote-container a {
+  text-decoration: none;
+  color: #3E3232;
+  transition: 1s;
+}
+#quote-container a:hover {
+  text-decoration: underline;
+  transition: 1s;
 }/*# sourceMappingURL=Quotes.css.map */
