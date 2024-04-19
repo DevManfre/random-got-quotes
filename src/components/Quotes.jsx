@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import '../static/css/Quotes.css'
 
 function Quotes() {
     const [quote, setQuote] = useState("");
@@ -29,7 +30,7 @@ function Quotes() {
                     <button className="btn">
                         <i class="bi bi-copy"></i>
                     </button>
-                    <button className="btn">
+                    <button className="btn" id='new-quote'>
                         <i class="bi bi-arrow-counterclockwise"></i>
                     </button>
                 </div>

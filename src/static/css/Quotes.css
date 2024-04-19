@@ -1,0 +1,19 @@
+#quote-container {
+  text-align: center;
+}
+#quote-container #quote-box {
+  background-color: #3E3232;
+  width: 600px;
+  border-radius: 8px;
+  color: white;
+}
+#quote-container #quote-box .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#quote-container #quote-box .button-container button {
+  width: 50px;
+  background-color: white;
+}/*# sourceMappingURL=Quotes.css.map */
