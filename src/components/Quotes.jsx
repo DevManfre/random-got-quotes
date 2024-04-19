@@ -33,7 +33,7 @@ function Quotes() {
                     <a className="btn" title="Copy the quote!" onClick={() => { navigator.clipboard.writeText(quote.sentence) }}>
                         <i class="bi bi-copy"></i>
                     </a>
-                    <a className="btn" id='tweet-quote' title="Tweet the quote!">
+                    <a className="btn" id='tweet-quote' title="Tweet the quote!" href="twitter.com/intent/tweet">
                         <i class="bi bi-twitter-x"></i>
                     </a>
                     <a className="btn" id='new-quote' onClick={newQuote} title="Get a new quote!">

@@ -18,6 +18,7 @@
 }
 #quote-container #quote-box .text .row #author {
   text-align: right;
+  padding-top: 10px;
 }
 #quote-container #quote-box .button-container {
   display: flex;
