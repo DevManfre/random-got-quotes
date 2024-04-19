@@ -16,9 +16,12 @@
   font-size: 22px;
   font-weight: 500;
 }
+#quote-container #quote-box .text .row #text .bi-quote {
+  display: inline-flex;
+}
 #quote-container #quote-box .text .row #author {
   text-align: right;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 #quote-container #quote-box .button-container {
   display: flex;
@@ -29,4 +32,7 @@
 #quote-container #quote-box .button-container a {
   width: 50px;
   background-color: white;
+}
+#quote-container #quote-box .button-container a:active {
+  background-color: #41B06E;
 }/*# sourceMappingURL=Quotes.css.map */

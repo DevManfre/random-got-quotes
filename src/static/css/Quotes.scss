@@ -19,11 +19,15 @@ $text-color: white;
             .row #text {
                 font-size: 22px;
                 font-weight: 500;
+
+                .bi-quote {
+                    display: inline-flex;
+                }
             }
 
-            .row #author{
+            .row #author {
                 text-align: right;
-                padding-top: 10px;
+                padding-top: 7px;
             }
         }
 
@@ -38,8 +42,8 @@ $text-color: white;
                 background-color: $text-color;
             }
 
-            #new-quote {
-
+            a:active{
+                background-color: #41B06E;
             }
         }
     }
