@@ -21,11 +21,11 @@ function Quotes() {
     }, []);
 
     function handleClick() {
+        let time = 1000;
+
         setVisible(false);
-        setTimeout(() => {
-            newQuote();
-            setVisible(true);
-        }, 750);
+        setTimeout(() => newQuote(), time/2);
+        setTimeout(() => setVisible(true), time);
     }
 
     return (
