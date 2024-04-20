@@ -6,25 +6,23 @@ function Quotes() {
     const [author, setAuthor] = useState("");
     const [visible, setVisible] = useState(true);
 
-    function newQuote() {
-        fetch('https://api.gameofthronesquotes.xyz/v1/random')
-            .then(response => response.json())
-            .then(data => {
-                setQuote(data.sentence);
-                setAuthor(data.character.name);
-            })
-            .catch(error => console.error(error));
-    }
-
-    useEffect(() => {
-        newQuote();
-    }, []);
+    useEffect(handleClick, []);
 
     function handleClick() {
         let time = 1000;
 
         setVisible(false);
-        setTimeout(() => newQuote(), time/2);
+
+        setTimeout(() => {
+            fetch('https://api.gameofthronesquotes.xyz/v1/random')
+                .then(response => response.json())
+                .then(data => {
+                    setQuote(data.sentence);
+                    setAuthor(data.character.name);
+                })
+                .catch(error => console.error(error));
+        }, time / 2);
+
         setTimeout(() => setVisible(true), time);
     }
 
