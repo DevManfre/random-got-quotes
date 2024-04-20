@@ -1,12 +1,14 @@
+$responsive-width: 600px;
 $text-color: white;
 $box-background: #3E3232;
 
 #quote-container {
     text-align: center;
+    margin:auto;
 
     #quote-box {
         background-color: $box-background;
-        width: 600px;
+        width: $responsive-width;
         border-radius: 8px;
         color: $text-color;
         padding: 25px;
@@ -66,5 +68,16 @@ $box-background: #3E3232;
     a:hover {
         text-decoration: underline;
         transition: 1s;
+    }
+}
+
+@media screen and (max-width: calc($responsive-width + 20px)) {
+    #quote-container {
+        width: 90vw;
+        margin: 1vw;
+
+        #quote-box {
+            width: 100%;
+        }
     }
 }

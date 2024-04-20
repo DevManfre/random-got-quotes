@@ -1,5 +1,6 @@
 #quote-container {
   text-align: center;
+  margin: auto;
 }
 #quote-container #quote-box {
   background-color: #3E3232;
@@ -49,4 +50,14 @@
 #quote-container a:hover {
   text-decoration: underline;
   transition: 1s;
+}
+
+@media screen and (max-width: 620px) {
+  #quote-container {
+    width: 90vw;
+    margin: 1vw;
+  }
+  #quote-container #quote-box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Quotes.css.map */
