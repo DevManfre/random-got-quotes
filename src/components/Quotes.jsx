@@ -1,4 +1,4 @@
-import { useEffect, useState, trans } from "react"
+import { useEffect, useState } from "react"
 import '../static/css/Quotes.css'
 
 function Quotes() {
@@ -22,10 +22,8 @@ function Quotes() {
 
         if (houseList.includes(houseName))
             setImgURL(require('../static/img/' + houseName + '.png'));
-        else{
+        else
             setImgURL('');
-            console.log(houseName);
-        }
     }
 
     function handleClick() {
@@ -82,5 +80,3 @@ function Quotes() {
 }
 
 export default Quotes;
-
-//99 x 124
