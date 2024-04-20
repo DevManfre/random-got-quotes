@@ -18,4 +18,4 @@ There are several ways to test the web application:
 For the commit, this repository use [gitmoji.dev](http://www.gitmoji.dev) to explain the goal of the commit. 
 
 ## Reference
-This web app uses bees for citation generation, documented [here](https://github.com/shevabam/game-of-thrones-quotes-api).
+This web app uses API for quotes generation, documented [here](https://github.com/shevabam/game-of-thrones-quotes-api).
