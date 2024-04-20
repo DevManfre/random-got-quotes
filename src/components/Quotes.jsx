@@ -63,15 +63,15 @@ function Quotes() {
                     </div>
                 </div>
                 <div className="row button-container">
-                    <a className="btn" title="Copy the quote!" onClick={() => { navigator.clipboard.writeText(quote.sentence) }}>
+                    <button className="btn" title="Copy the quote!" onClick={() => { navigator.clipboard.writeText(quote.sentence) }}>
                         <i class="bi bi-copy"></i>
-                    </a>
-                    <a className="btn" id='tweet-quote' target="_blank" title="Tweet the quote!" href="https://twitter.com/intent/tweet">
+                    </button>
+                    <button className="btn" id='tweet-quote' target="_blank" title="Tweet the quote!" href="https://twitter.com/intent/tweet">
                         <i class="bi bi-twitter-x"></i>
-                    </a>
-                    <a className="btn" id='new-quote' onClick={handleClick} title="Get a new quote!">
+                    </button>
+                    <button className="btn" id='new-quote' onClick={handleClick} title="Get a new quote!">
                         <i class="bi bi-arrow-counterclockwise"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
             <a href="https://github.com/DevManfre">by DevManfre</a>

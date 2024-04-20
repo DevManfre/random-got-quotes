@@ -33,11 +33,11 @@
   justify-content: center;
   gap: 5px;
 }
-#quote-container #quote-box .button-container a {
+#quote-container #quote-box .button-container button {
   width: 50px;
   background-color: white;
 }
-#quote-container #quote-box .button-container a:hover {
+#quote-container #quote-box .button-container button:hover {
   background-color: #1679AB;
   color: white;
 }

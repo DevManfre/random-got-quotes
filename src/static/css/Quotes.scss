@@ -45,12 +45,12 @@ $box-background: #3E3232;
             justify-content: center;
             gap: 5px;
 
-            a {
+            button {
                 width: 50px;
                 background-color: $text-color;
             }
 
-            a:hover {
+            button:hover {
                 background-color: #1679AB;
                 color: $text-color;
             }
