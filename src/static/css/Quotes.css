@@ -19,6 +19,10 @@
 #quote-container #quote-box .text .row #text .bi-quote {
   display: inline-flex;
 }
+#quote-container #quote-box .text .row .house-logo {
+  width: 30px;
+  margin: 0 10px 0 10px;
+}
 #quote-container #quote-box .text .row #author {
   text-align: right;
   padding-top: 7px;
@@ -34,7 +38,8 @@
   background-color: white;
 }
 #quote-container #quote-box .button-container a:hover {
-  background-color: #41B06E;
+  background-color: #1679AB;
+  color: white;
 }
 #quote-container a {
   text-decoration: none;

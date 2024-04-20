@@ -4,9 +4,29 @@ import '../static/css/Quotes.css'
 function Quotes() {
     const [quote, setQuote] = useState("");
     const [author, setAuthor] = useState("");
+    const [imgURL, setImgURL] = useState("");
     const [visible, setVisible] = useState(true);
 
     useEffect(handleClick, []);
+
+    function houseCheck(houseName) {
+        let houseList = [
+            'stark',
+            'lannister',
+            'targaryen',
+            'tyrell',
+            'baratheon',
+            'greyjoy',
+            'martell'
+        ];
+
+        if (houseList.includes(houseName))
+            setImgURL(require('../static/img/' + houseName + '.png'));
+        else{
+            setImgURL('');
+            console.log(houseName);
+        }
+    }
 
     function handleClick() {
         let time = 1000;
@@ -19,6 +39,7 @@ function Quotes() {
                 .then(data => {
                     setQuote(data.sentence);
                     setAuthor(data.character.name);
+                    houseCheck(data.character.house.slug);
                 })
                 .catch(error => console.error(error));
         }, time / 2);
@@ -37,7 +58,10 @@ function Quotes() {
                         </span>
                     </div>
                     <div className="row">
-                        <p id="author">- {author}</p>
+                        <p id="author">
+                            - {author}
+                            <img className="house-logo" src={imgURL} alt='' />
+                        </p>
                     </div>
                 </div>
                 <div className="row button-container">
@@ -58,3 +82,5 @@ function Quotes() {
 }
 
 export default Quotes;
+
+//99 x 124

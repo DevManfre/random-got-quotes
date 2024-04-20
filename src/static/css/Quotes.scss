@@ -17,18 +17,25 @@ $box-background: #3E3232;
         }
 
         .text {
-            .row #text {
-                font-size: 22px;
-                font-weight: 500;
+            .row {
+                #text {
+                    font-size: 22px;
+                    font-weight: 500;
 
-                .bi-quote {
-                    display: inline-flex;
+                    .bi-quote {
+                        display: inline-flex;
+                    }
                 }
-            }
 
-            .row #author {
-                text-align: right;
-                padding-top: 7px;
+                .house-logo {
+                    width: 30px;
+                    margin: 0 10px 0 10px;
+                }
+
+                #author {
+                    text-align: right;
+                    padding-top: 7px;
+                }
             }
         }
 
@@ -42,9 +49,10 @@ $box-background: #3E3232;
                 width: 50px;
                 background-color: $text-color;
             }
-            
+
             a:hover {
-                background-color: #41B06E;
+                background-color: #1679AB;
+                color: $text-color;
             }
         }
     }
