@@ -1,73 +1,84 @@
 $responsive-width: 600px;
 $text-color: white;
 $box-background: #3E3232;
+$page-background: #191a1a;
 
-#quote-container {
-    text-align: center;
-    margin:auto;
+#root {
+    background-color: $page-background;
+    height: 100vh;
 
-    #quote-box {
-        background-color: $box-background;
-        width: $responsive-width;
-        border-radius: 8px;
-        color: $text-color;
-        padding: 25px;
+    #quote-container {
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 48%;
+        transform: translate(-50%, -50%);
 
-        .bi-quote {
-            font-size: 40px;
-            overflow: hidden;
-        }
+        #quote-box {
+            background-color: $box-background;
+            width: $responsive-width;
+            border-radius: 8px;
+            color: $text-color;
+            padding: 25px;
 
-        .text {
-            .row {
-                #text {
-                    font-size: 22px;
-                    font-weight: 500;
+            .bi-quote {
+                font-size: 40px;
+                overflow: hidden;
+            }
 
-                    .bi-quote {
-                        display: inline-flex;
+            .text {
+                .row {
+                    #text {
+                        font-size: 22px;
+                        font-weight: 500;
+
+                        .bi-quote {
+                            display: inline-flex;
+                        }
+                    }
+
+                    .house-logo {
+                        width: 30px;
+                        margin: 0 10px 0 10px;
+                    }
+
+                    #author {
+                        text-align: right;
+                        padding-top: 7px;
                     }
                 }
+            }
 
-                .house-logo {
-                    width: 30px;
-                    margin: 0 10px 0 10px;
+            .button-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                button {
+                    width: 50px;
+                    background-color: $text-color;
                 }
 
-                #author {
-                    text-align: right;
-                    padding-top: 7px;
+                button:hover {
+                    background-color: $page-background;
+                    color: $text-color;
                 }
             }
         }
 
-        .button-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-
-            button {
-                width: 50px;
-                background-color: $text-color;
-            }
-
-            button:hover {
-                background-color: #1679AB;
-                color: $text-color;
-            }
+        a {
+            text-decoration: none;
+            color: $box-background;
+            transition: 1s;
+            color: $text-color;
         }
-    }
 
-    a {
-        text-decoration: none;
-        color: $box-background;
-        transition: 1s;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        transition: 1s;
+        a:hover {
+            text-decoration: underline;
+            transition: 1s;
+        }
     }
 }
 

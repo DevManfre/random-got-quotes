@@ -1,53 +1,62 @@
-#quote-container {
+#root {
+  background-color: #191a1a;
+  height: 100vh;
+}
+#root #quote-container {
   text-align: center;
   margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
 }
-#quote-container #quote-box {
+#root #quote-container #quote-box {
   background-color: #3E3232;
   width: 600px;
   border-radius: 8px;
   color: white;
   padding: 25px;
 }
-#quote-container #quote-box .bi-quote {
+#root #quote-container #quote-box .bi-quote {
   font-size: 40px;
   overflow: hidden;
 }
-#quote-container #quote-box .text .row #text {
+#root #quote-container #quote-box .text .row #text {
   font-size: 22px;
   font-weight: 500;
 }
-#quote-container #quote-box .text .row #text .bi-quote {
+#root #quote-container #quote-box .text .row #text .bi-quote {
   display: inline-flex;
 }
-#quote-container #quote-box .text .row .house-logo {
+#root #quote-container #quote-box .text .row .house-logo {
   width: 30px;
   margin: 0 10px 0 10px;
 }
-#quote-container #quote-box .text .row #author {
+#root #quote-container #quote-box .text .row #author {
   text-align: right;
   padding-top: 7px;
 }
-#quote-container #quote-box .button-container {
+#root #quote-container #quote-box .button-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
-#quote-container #quote-box .button-container button {
+#root #quote-container #quote-box .button-container button {
   width: 50px;
   background-color: white;
 }
-#quote-container #quote-box .button-container button:hover {
-  background-color: #1679AB;
+#root #quote-container #quote-box .button-container button:hover {
+  background-color: #191a1a;
   color: white;
 }
-#quote-container a {
+#root #quote-container a {
   text-decoration: none;
   color: #3E3232;
   transition: 1s;
+  color: white;
 }
-#quote-container a:hover {
+#root #quote-container a:hover {
   text-decoration: underline;
   transition: 1s;
 }
