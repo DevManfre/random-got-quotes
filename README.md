@@ -11,7 +11,7 @@ Page that gives you random quotes from the popular show Game of Thrones.
 ## How can I try it
 There are several ways to test the web application:
 - visit the [site it](https://got-random-quotes.netlify.app/) is hosted on;
-- visit the [codpen page](https://codepen.io/devmanfre/pen/eYoQKEg) (it's an older version);
+- visit the [codpen page](https://codepen.io/devmanfre/pen/wvZZmYV) (it's an older version);
 - clone the repository and use the command `npm start` within the repository.
 
 ## Commit syntax
